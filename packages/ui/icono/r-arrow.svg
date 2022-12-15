@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="28px" viewBox="0 0 15 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 2 Copy</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4E82E7" offset="0%"></stop>
+            <stop stop-color="#6039E4" offset="48.2604554%"></stop>
+            <stop stop-color="#771EE3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AETERNUM" transform="translate(-1355.000000, -6788.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M1373.9612,6794.91792 C1374.55882,6794.34421 1375.50837,6794.36359 1376.08208,6794.96121 C1376.61994,6795.52147 1376.63652,6796.39105 1376.14407,6796.97029 L1376.0388,6797.08208 L1363.5388,6809.08208 C1362.99463,6809.60448 1362.15492,6809.63713 1361.57381,6809.18003 L1361.4612,6809.08208 L1348.9612,6797.08208 C1348.36359,6796.50837 1348.34421,6795.55882 1348.91792,6794.96121 C1349.45578,6794.40094 1350.32396,6794.34889 1350.9228,6794.8173 L1351.0388,6794.91792 L1362.499,6805.92 L1373.9612,6794.91792 Z" id="Path-2-Copy" transform="translate(1362.500001, 6802.000002) rotate(-90.000000) translate(-1362.500001, -6802.000002) "></path>
+        </g>
+    </g>
+</svg>

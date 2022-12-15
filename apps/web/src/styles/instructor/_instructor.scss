@@ -1,0 +1,104 @@
+.block.instructor{
+    position: relative;
+    padding: 310px 0 200px 0;
+    margin-top: -175px;
+    background: $texto4;
+    .textura{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        img{
+            position: relative !important;
+            display: block;
+        }
+    }
+    .holder{
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            padding: 0 15px;
+            .title{
+                max-width: 175px;
+                width: 100%;
+                margin: 0 auto;
+                font-family: "Urbane-DemiBold";
+                font-size: 26px;
+                color: $degrado2;
+            }
+            .flex-row{
+                display: flex;
+                justify-content: center;
+                margin-top: 24px;
+                .imagen{
+                    max-width: 213px;
+                    width: 100%;
+                    margin-right: 18px;
+                    img{
+                        position: relative !important;
+                        display: block;
+                    }
+                }
+                .content{
+                    max-width: 468px;
+                    width: 100%;
+                    margin-left: 18px;
+                    .name{
+                        margin-top: 65px;
+                        font-family: "Urbane-DemiBold";
+                        font-size: 22px;
+                        color: $degrado2;
+                    }
+                    .especializado{
+                        margin-top: 20px;
+                        font-family: "Urbane-Light";
+                        font-size: 16px;
+                        color: $background;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .block.instructor{
+        padding: 110px 0 110px 0;
+        margin-top: 0;
+        .holder{
+            padding: 0 22px;
+            .container-fluid{
+                padding: 0 0px;
+                .title{
+                    font-size: 24px;
+                    text-align: center;
+                }
+                .flex-row{
+                    display: block;
+                    margin-top: 49px;
+                    .imagen{
+                        max-width: 180px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    .content{
+                        max-width: 321px;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        .name{
+                            margin-top: 35px;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                        .especializado{
+                            margin-top: 15px;
+                            font-size: 12px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.block.carousel{
+    position: relative;
+    .carousel{
+        .opinion{
+            height: 480px;
+            display: flex;
+            .left{
+                background: $background;
+                max-width: 35%;
+                width: 100%;
+                height: 100%;
+                padding: 168px 100px;
+                .icono{
+                    max-width: 48px;
+                    width: 100%;
+                    margin: 0 auto;
+                    img{
+                        position: relative !important;
+                        display: block;
+                    }
+                }
+                .title{
+                    max-width: 302px;
+                    width: 100%;
+                    margin: 20px auto 0 auto;
+                    font-family: "Urbane-Bold";
+                    font-size: 28px;
+                    color: $texto4;
+                    text-align: center;
+                }
+            }
+            .imagen{
+                position: absolute;
+                max-width: 172px;
+                width: 100%;
+                padding: 4px;
+                border-radius: 50%;
+                left: 35%;
+                transform: translateX(-50%);
+                top: 154px;
+                background: $degrado1;
+                img{
+                    position: relative !important;
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+            .right{
+                background: $background2;
+                max-width: 65%;
+                width: 100%;
+                height: 100%;
+                .content{
+                    padding: 167px 70px 187px 111px;
+                    .opi{
+                        font-family: "Urbane-Light";
+                        font-size: 16px;
+                        color: $texto5;
+                        line-height: 21px;
+                    }
+                    .nombre{
+                        margin-top: 20px;
+                        font-family: "Urbane-Light";
+                        font-size: 14px;
+                        color: $texto5;
+                    }
+                }
+            }
+        }
+        .swiper-button-prev{
+            top: initial;
+            bottom: 25px;
+            right: 136px;
+            left: initial;
+            &::after{
+                content: url('../../../../../packages/ui/icono/l-arrow.svg');
+            }
+        }
+        .swiper-button-next{
+            top: initial;
+            bottom: 25px;
+            right: 70px;
+            &::after{
+                content: url('../../../../../packages/ui/icono/r-arrow.svg');
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .block.carousel{
+        .carousel{
+            display: block;
+            .opinion{
+                height: 807px;
+                display: block;
+                .left{
+                    max-width: none;
+                    height: 336px;
+                    padding: 80px 56px 125px 56px;
+                    .icono{
+                        max-width: 43px;
+                        width: 100%;
+                        margin: 0 auto;
+                        img{
+                            position: relative !important;
+                            display: block;
+                        }
+                    }
+                    .title{
+                        max-width: none;
+                        width: 100%;
+                        margin: 15px auto 0 auto;
+                        font-size: 26px;
+                    }
+                }
+                .imagen{
+                    position: absolute;
+                    max-width: 158px;
+                    left: 128px;
+                    top: 261px;
+                    left: 128px;
+                    transform: translateX(0);
+                }
+                .right{
+                    max-width: none;
+                    width: 100%;
+                    height: 471px;
+                    .content{
+                        padding: 125px 22px 157px 22px;
+                        text-align: center;
+                    }
+                }
+            }
+            .swiper-button-prev{
+                top: initial;
+                bottom: 40px;
+                right: initial;
+                left: 162px;
+                &::after{
+                    content: url('../../../../../packages/ui/icono/l-arrow.svg');
+                }
+            }
+            .swiper-button-next{
+                top: initial;
+                bottom: 40px;
+                right: 162px;
+                &::after{
+                    content: url('../../../../../packages/ui/icono/r-arrow.svg');
+                }
+            }
+        }
+    }
+}

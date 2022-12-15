@@ -1,0 +1,277 @@
+.block.expertos{
+    position: relative;
+    padding: 255.6px 0 139px 0;
+    background: $texto1;
+    .holder{
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            padding: 0 15px;
+            .flex-row{
+                display: flex;
+                justify-content: space-evenly;
+                .texto{
+                    max-width: 525px;
+                    width: 100%;
+                    .texto1{
+                        font-family: "Urbane-Light";
+                        font-size: 18px;
+                        color: $texto3;
+                        margin-bottom: 35px;
+                        line-height: 28px;
+                        height: 84px;
+                        strong{
+                            font-family: "Urbane-DemiBold";
+                        }
+                        &.espacio{
+                            margin-bottom: 80px;
+                        }
+                    }
+                    .texto2{
+                        font-family: "Urbane-Light";
+                        font-size: 21px;
+                        color: $degrado2;
+                        margin-bottom: 35px;
+                        line-height: 35px;
+                        height: 105px;
+                        strong{
+                            font-family: "Urbane-DemiBold";
+                        }
+                    }
+                    a{
+                        max-width: 345px;
+                        width: 100%;
+                        display: inline-block;
+                        padding: 10px 0;
+                        text-decoration: none;
+                        font-family: "Urbane-DemiBold";
+                        font-size: 22px;
+                        color: $backgroundButton;
+                        &::after{
+                            display:block;
+                            content: '';
+                            border-bottom: solid 2px $texto2;  
+                            transform: scaleX(0);  
+                            transition: transform 250ms ease-in-out;
+                            margin-top: 10px;
+                        }
+                        &:hover::after{
+                            transform: scaleX(1);
+                        }
+                        &::after{
+                            transform-origin:  0% 50%;
+                        }
+                    }
+                }
+                .imagenes{
+                    max-width: 551px;
+                    width: 100%;
+                    position: relative;
+                    .background{
+                        position: relative;
+                        max-width: 470px;
+                        width: 100%;
+                        height: 470px;
+                        border-radius: 262px;
+                        background: linear-gradient(90deg, #4e82e7 0%, #6039e4 48.26%, #771ee3 100%);
+                        .coin1{
+                            position: absolute;
+                            max-width: 64px;
+                            width: 100%;
+                            left: 64px;
+                            top: 201px;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                        .coin2{
+                            position: absolute;
+                            max-width: 64px;
+                            width: 100%;
+                            right: 53px;
+                            top: 192px;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                        .coin3{
+                            position: absolute;
+                            max-width: 64px;
+                            width: 100%;
+                            top: -12px;
+                            left: 130px;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                        .coin4{
+                            position: absolute;
+                            max-width: 53.2px;
+                            width: 100%;
+                            top: 65.03px;
+                            left: 55px;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                        .coin5{
+                            position: absolute;
+                            max-width: 62.38px;
+                            width: 100%;
+                            top: -24.53px;
+                            right: 144.61px;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                        .coin6{
+                            position: absolute;
+                            max-width: 61.82px;
+                            width: 100%;
+                            top: 70.87px;
+                            right: 35px;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                        .icono{
+                            position: absolute;
+                            max-width: 162.61px;
+                            width: 100%;
+                            bottom: -39px;
+                            right: -56.61px;
+                            z-index: 1;
+                            img{
+                                position: relative !important;
+                                display: block;
+                            }
+                        }
+                    }
+                    .imagen{
+                        position: absolute;
+                        max-width: 519px;
+                        width: 100%;
+                        top: 87px;
+                        left: -24px;
+                        img{
+                            position: relative !important;
+                            display: block;
+                        }
+                    }
+                    &.inView{
+                        animation: tilt-in-bottom-2 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .block.expertos{
+        position: relative;
+        margin: 72px 0;
+        padding: 70px 0 60.5px 0;
+        .holder{
+            padding: 0 22px;
+            .container-fluid{
+                padding: 0 0px;
+                .flex-row{
+                    display: block;
+                    justify-content: space-evenly;
+                    .texto{
+                        max-width: none;
+                        width: 100%;
+                        .texto1{
+                            font-size: 16px;
+                            margin-bottom: 30px;
+                            line-height: 26px;
+                            height: 78px;
+                            span{
+                                font-family: "Urbane-DemiBold";
+                            }
+                            &.espacio{
+                                margin-bottom: 60px;
+                            }
+                        }
+                        .texto2{
+                            font-size: 19px;
+                            margin-bottom: 30px;
+                            line-height: 33px;
+                            height: 139px;
+                            span{
+                                font-family: "Urbane-DemiBold";
+                            }
+                        }
+                        a{
+                            max-width: 314px;
+                            font-size: 20px;
+                            &::after{
+                                transform: scaleX(1);  
+                            }
+                        }
+                    }
+                    .imagenes{
+                        max-width: none;
+                        margin-top: 93px;
+                        .background{
+                            position: relative;
+                            max-width: 250px;
+                            width: 100%;
+                            height: 250px;
+                            margin: 0 auto;
+                            .coin1{
+                                max-width: 33px;
+                                left: 27px;
+                                top: 105px;
+                            }
+                            .coin2{
+                                max-width: 33px;
+                                right: 38px;
+                                top: 101px;
+                            }
+                            .coin3{
+                                max-width: 33px;
+                                top: -9px;
+                                left: 176px;
+                            }
+                            .coin4{
+                                max-width: 27px;
+                                top: 34px;
+                                left: 22px;
+                            }
+                            .coin5{
+                                max-width: 32px;
+                                top: 8px;
+                                right: 108px;
+                            }
+                            .coin6{
+                                max-width: 32px;
+                                top:37px;
+                                right: 28px;
+                            }
+                            .icono{
+                                max-width: 85.1px;
+                                bottom: -33px;
+                                right: -23px;
+                                z-index: 1;
+                            }
+                        }
+                        .imagen{
+                            max-width: 271px;
+                            top: 46px;
+                            left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

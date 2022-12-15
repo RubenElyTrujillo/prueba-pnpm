@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="16px" viewBox="0 0 29 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 3</title>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4E82E7" offset="0%"></stop>
+            <stop stop-color="#6039E4" offset="48.2604554%"></stop>
+            <stop stop-color="#771EE3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AETERNUM" transform="translate(-1217.000000, -7756.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Path-3" transform="translate(1217.499998, 7756.499998)">
+                <path d="M25.4612042,0.417920977 C26.058821,-0.155791174 27.0083708,-0.136412608 27.5820829,0.461204216 C28.1199381,1.02146999 28.1365221,1.89105181 27.644073,2.47028524 L27.5387997,2.58208294 L15.0387997,14.5820829 C14.4946343,15.1044817 13.6549224,15.1371316 13.0738137,14.6800327 L12.9612042,14.5820829 L0.461204216,2.58208294 C-0.136412608,2.00837079 -0.155791174,1.05882104 0.417920977,0.461204216 C0.955776119,-0.0990615562 1.82395727,-0.15111011 2.42280001,0.317296605 L2.5387997,0.417920977 L13.999002,11.420002 L25.4612042,0.417920977 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

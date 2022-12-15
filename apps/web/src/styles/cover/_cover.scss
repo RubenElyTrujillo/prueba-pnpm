@@ -1,0 +1,252 @@
+.block.cover{
+    position: relative;
+    padding: 210px 0 274px 0;
+    background: $background;
+    .textura1{
+        max-width: 530px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img{
+            position: relative !important;
+        }
+    }
+    .textura2{
+        max-width: 1097px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img{
+            position: relative !important;
+        }
+    }
+    .cover{
+        max-width: 1108px;
+        width: 100%;
+        position: absolute !important;
+        bottom: -104px;
+        right: 180px;
+        z-index: 2;
+        transform: translate(180px, 0%);
+        transition: all 1s ease-in;
+        transition-delay: 0.5s;
+        img{
+            position: relative !important;
+        }
+        &.view{
+            right: -180px;
+            transform: translate(0%, 0%);
+        }
+    }
+    .holder{
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            max-width: 776px;
+            width: 100%;
+            padding: 0 15px;
+            position: relative;
+            .texto-1{
+                font-family: "Urbane-Light";
+                font-size: 24px;
+                color: $texto1;
+                margin-bottom: 9px;
+                display: flex;
+                height: 28px;
+                overflow: hidden;
+                span{
+                    // -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	                //animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    display: inline-block;
+                    will-change: opacity, transform;
+                    opacity: 0;
+                    transform: translateY(100%) translateZ(0);
+                    animation: 0s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0s forwards line_leave;
+                    &.isActive{
+                        transform: translateY(-10%) translateZ(0);
+                        animation: 1s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0s forwards line_enter;
+                    }
+                }
+            }
+            .texto-2{
+                font-family: "Urbane-Bold";
+                font-size: 46px;
+                color: $texto1;
+                margin-bottom: 25px;
+                height: 112px;
+                overflow: hidden;
+                p{
+                    color: $texto1;
+                    // -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	                //animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    display: inline-block;
+                    will-change: opacity, transform;
+                    opacity: 0;
+                    transform: translateY(100%) translateZ(0);
+                    animation: 0s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0s forwards line_leave;
+                    &.isActive{
+                        transform: translateY(-10%) translateZ(0);
+                        animation: 1s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0.5s forwards line_enter;
+                    }
+                }
+            }
+            .text-3{
+                font-family: "Urbane-DemiBold";
+                font-size: 20px;
+                color: $texto2;
+                margin-bottom: 50px;
+                display: flex;
+                height: 24px;
+                overflow: hidden;
+                p{
+                    color: $texto2;
+                    // -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	                //animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    display: block;
+                    will-change: opacity, transform;
+                    opacity: 0;
+                    transform: translateY(100%) translateZ(0);
+                    animation: 0s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0s forwards line_leave;
+                    &.isActive{
+                        transform: translateY(-10%) translateZ(0);
+                        animation: 1s cubic-bezier(0.430, 0.195, 0.020, 1.000) 1s forwards line_enter;
+                    }
+                }
+            }
+            a{
+                max-width: 250px;
+                width: 100%;
+                height: 47px;
+                background: $backgroundButton;
+                padding: 15px 29px;
+                text-decoration: none;
+                font-family: "Urbane-Medium";
+                font-size: 14px;
+                color: $texto1;
+                display: inline-block;
+                transition: all 0.2s ease-in;
+                position: relative;
+                overflow: hidden;
+                z-index: 0;
+                border-radius: 25px;
+                cursor: pointer;
+                transform: translate3d(0px, 15px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                opacity: 0;
+                transition: all 1s ease-in;
+                transition-delay: 1s;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+                    top: 100%;
+                    width: 140%;
+                    height: 180%;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    border-radius: 50%;
+                    display: block;
+                    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                    z-index: -1;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 55%;
+                    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+                    top: 180%;
+                    width: 160%;
+                    height: 190%;
+                    background: linear-gradient(90deg, #4e82e7 0%, #6039e4 48.26%, #771ee3 100%);;
+                    border-radius: 50%;
+                    display: block;
+                    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+                    z-index: -1;
+                }
+                &:hover::before {
+                    top: -35%;
+                    background: linear-gradient(90deg, #4e82e7 0%, #6039e4 48.26%, #771ee3 100%);;
+                    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                }
+                &:hover::after {
+                    top: -45%;
+                    background: linear-gradient(90deg, #4e82e7 0%, #6039e4 48.26%, #771ee3 100%);;
+                    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+                }
+                &.view{
+                    transform: translate3d(0em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    opacity: 1;
+                    transform-style: preserve-3d;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .block.cover{
+        position: relative;
+        padding: 139px 0 296px 0;
+        .textura1{
+            max-width: 303px;
+        }
+        .textura2{
+            max-width: 628px;
+        }
+        .cover{
+            max-width: none;
+            width: 594px;
+            bottom: -73px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .holder{
+            padding: 0 20px 0 24px;
+            .container-fluid{
+                padding: 0 0px;
+                text-align: center;
+                .texto-1{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    height: 48px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .texto-2{
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    height: 192px;
+                    justify-content: center;
+                }
+                .text-3{
+                    font-size: 18px;
+                    margin-bottom: 46px;
+                    text-align: center;
+                    height: 22px;
+                    justify-content: center;
+                }
+                a{
+                    max-width: 240px;
+                    height: 42px;
+                    padding: 12px 24px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes line_enter {
+	0% {
+        opacity: 0;
+        transform: translateY(100%) rotate(4deg) translateZ(0);
+	}
+
+	100% {
+        opacity: 1;
+        transform: translateY(-15%) translateZ(0);
+	}
+}
+  

@@ -1,0 +1,50 @@
+.block.texto{
+    position: relative;
+    padding: 58px 0;
+    background: $background2;
+    .circulo{
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        top: -13px;
+        right: 168px;
+        background: linear-gradient(90deg, #4e82e7 0%, #6039e4 48.26%, #771ee3 100%);
+        border-radius: 50%;
+    }
+    .holder{
+        max-width: 1330px;
+        width: 100%;
+        margin: 0 auto;
+        .container-fluid{
+            padding: 0 15px;
+            .text{
+                max-width: 635px;
+                width: 100%;
+                text-align: center;
+                font-family: "Urbane-Light";
+                font-size: 10px;
+                color: $texto3;
+                margin: 0 auto;
+                line-height: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .block.texto{
+        padding: 50px 0 65px 0;
+        .circulo{
+            display: none;
+        }
+        .holder{
+            padding: 0 22px;
+            .container-fluid{
+                padding: 0 0px;
+                .text{
+                    max-width: none;
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
